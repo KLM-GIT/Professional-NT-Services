@@ -1,0 +1,14 @@
+//
+// This file maps message Id values in to a text string that contains
+// the symbolic name used for the message Id.  Useful for debugging
+// output.
+//
+
+struct {
+    DWORD MessageId;
+    char *SymbolicName;
+} MonitorSymbolicNames[] = {
+ (DWORD) MONITOR_PING_SUCCESSFUL, "MONITOR_PING_SUCCESSFUL",
+ (DWORD) MONITOR_WIN32_ERROR, "MONITOR_WIN32_ERROR",
+ (DWORD) 0xFFFFFFFF, NULL
+};

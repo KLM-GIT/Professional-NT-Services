@@ -1,0 +1,23 @@
+HKLM
+{
+	NoRemove SYSTEM
+	{
+		NoRemove CurrentControlSet
+		{
+			NoRemove Services
+			{
+				NoRemove EventLog
+				{
+					NoRemove Application
+					{
+						ForceRemove BusObject
+						{
+							val EventMessageFile = s 'c:\winnt\System32\BusObjMsg.dll'
+							val TypesSupported = d '7'
+						}
+					}
+				}
+			}
+		}
+	}
+}

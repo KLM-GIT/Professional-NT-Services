@@ -1,0 +1,22 @@
+HKCR
+{
+	BusObject.Author.1 = s 'Author Class'
+	{
+		CLSID = s '{D0B92D6C-F0DF-11D1-8466-0020AF05ED45}'
+	}
+	BusObject.Author = s 'Author Class'
+	{
+		CurVer = s 'BusObject.Author.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D0B92D6C-F0DF-11D1-8466-0020AF05ED45} = s 'Author Class'
+		{
+			ProgID = s 'BusObject.Author.1'
+			VersionIndependentProgID = s 'BusObject.Author'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{D285D163-ED84-11D1-8466-0020AF05ED45}'
+		}
+	}
+}

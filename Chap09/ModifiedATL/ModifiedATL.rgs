@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{D285D154-ED84-11D1-8466-0020AF05ED45} = s 'ModifiedATL'
+		'ModifiedATL.EXE'
+		{
+			val AppID = s {D285D154-ED84-11D1-8466-0020AF05ED45}
+		}
+	}
+}

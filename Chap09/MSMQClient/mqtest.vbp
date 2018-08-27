@@ -1,0 +1,37 @@
+Type=Exe
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\WINNT\System32\STDOLE2.TLB#OLE Automation
+Reference=*\G{D7D6E071-DCCD-11D0-AA4B-0060970DEBAE}#1.0#0#C:\WINNT\System32\mqoa.dll#Microsoft Message Queue Object Library
+Reference=*\G{74C08640-CEDB-11CF-8B49-00AA00B8A790}#1.0#0#C:\WINNT\System32\Mts\mtxas.dll#Microsoft Transaction Server Type Library
+Reference=*\G{00000200-0000-0010-8000-00AA006D2EA4}#2.0#0#C:\Program Files\Common Files\system\ado\msado15.dll#Microsoft ActiveX Data Objects 1.5 Library
+Reference=*\G{BD96C556-65A3-11D0-983A-00C04FC29E30}#1.5#0#C:\Program Files\Common Files\system\msadc\msadcC:\Pr#Microsoft Remote Data Services 1.5 Library
+Reference=*\G{9381D8F6-0288-11D0-9501-00AA00B911A5}#1.5#0#C:\Program Files\Common Files\system\msadc\msadcf.dll#Microsoft Remote Data Services Server 1.5 Library
+Form=sender.frm
+Startup="Form1"
+ExeName32="mqtest.exe"
+Command32=""
+Name="Project1"
+HelpContextID="0"
+CompatibleMode="0"
+MajorVer=1
+MinorVer=0
+RevisionVer=0
+AutoIncrementVer=0
+ServerSupportFiles=0
+VersionCompanyName="Microsoft"
+CompilationType=0
+OptimizationType=0
+FavorPentiumPro(tm)=0
+CodeViewDebugInfo=0
+NoAliasing=0
+BoundsCheck=0
+OverflowCheck=0
+FlPointCheck=0
+FDIVCheck=0
+UnroundedFP=0
+StartMode=0
+Unattended=0
+ThreadPerObject=0
+MaxNumberOfThreads=1
+
+[MS Transaction Server]
+AutoRefresh=1

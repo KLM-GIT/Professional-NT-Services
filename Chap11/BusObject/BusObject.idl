@@ -1,0 +1,59 @@
+// BusObject.idl : IDL source for BusObject.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (BusObject.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+	[
+		object,
+		uuid(D0B92D6B-F0DF-11D1-8466-0020AF05ED45),
+		dual,
+		helpstring("IAuthor Interface"),
+		pointer_default(unique)
+	]
+	interface IAuthor : IDispatch
+	{
+		[id(1), helpstring("method GetAuthorList")] HRESULT GetAuthorList([in] long nContract, [out, retval] VARIANT* pDataArray);
+	};
+	[
+		object,
+		uuid(91606953-0FD2-11D2-928B-0080C767BC99),
+		dual,
+		helpstring("IPoolAdminData Interface"),
+		pointer_default(unique)
+	]
+	interface IPoolAdminData : IDispatch
+	{
+		[id(1), helpstring("method GetPoolInfo")] HRESULT GetPoolInfo([out, retval] VARIANT* paVariant);
+		[id(2), helpstring("method GetUsageStats")] HRESULT GetUsageStats([out] long* pConnections, [out] long* pRemaining);
+	};
+[
+	uuid(D285D162-ED84-11D1-8466-0020AF05ED45),
+	version(1.0),
+	helpstring("BusObject 1.0 Type Library")
+]
+library BUSOBJECTLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(D0B92D6C-F0DF-11D1-8466-0020AF05ED45),
+		helpstring("Author Class")
+	]
+	coclass Author
+	{
+		[default] interface IAuthor;
+	};
+	[
+		uuid(D2EA07E4-F887-11D1-846A-0020AF05ED45),
+		helpstring("PoolAdminData Class")
+	]
+	coclass PoolAdminData
+	{
+		[default] interface IPoolAdminData;
+	};
+};

@@ -1,0 +1,27 @@
+HKLM
+{
+	NoRemove SOFTWARE
+	{
+		NoRemove WroxBook
+		{
+				NoRemove BusObject
+				{
+					ForceRemove Parameters
+					{
+						val ResourceStartPool = d '10'
+						val ResourceMaxPool = d '50'
+						val ResourceAllocationSize = d '2'
+						val DeadResourcePollTime = d '300000'
+						val AllocPollTime = d '1000'
+						val MaxWaitForResourceTime = d '2000'
+						val HandleLifeTime = d '600000'
+						val MinPoolSize = d '0'
+						val WaitForClientsBeforeClosing = d '20'
+						val Server = s 'BusObject'
+						val User = s 'sa'
+						val Password = s 'pw'
+					}
+				}
+		}
+	}
+}

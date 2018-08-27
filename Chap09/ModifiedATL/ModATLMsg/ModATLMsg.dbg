@@ -1,0 +1,20 @@
+//
+// This file maps message Id values in to a text string that contains
+// the symbolic name used for the message Id.  Useful for debugging
+// output.
+//
+
+struct {
+    DWORD MessageId;
+    char *SymbolicName;
+} ModATLMsgSymbolicNames[] = {
+ (DWORD) MODATL_GENERIC, "MODATL_GENERIC",
+ (DWORD) MODATL_GENERIC_ERROR, "MODATL_GENERIC_ERROR",
+ (DWORD) MODATL_WIN32_ERROR, "MODATL_WIN32_ERROR",
+ (DWORD) MODATL_PAUSED, "MODATL_PAUSED",
+ (DWORD) MODATL_STOPPED, "MODATL_STOPPED",
+ (DWORD) MODATL_STARTED, "MODATL_STARTED",
+ (DWORD) MODATL_CONTINUED, "MODATL_CONTINUED",
+ (DWORD) MODATL_CONFIGURATION_DATA_MISSING, "MODATL_CONFIGURATION_DATA_MISSING",
+ (DWORD) 0xFFFFFFFF, NULL
+};

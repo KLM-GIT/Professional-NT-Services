@@ -1,0 +1,22 @@
+HKCR
+{
+	EmptyService.DoNothing.1 = s 'DoNothing Class'
+	{
+		CLSID = s '{D285D152-ED84-11D1-8466-0020AF05ED45}'
+	}
+	EmptyService.DoNothing = s 'DoNothing Class'
+	{
+		CurVer = s 'EmptyService.DoNothing.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D285D152-ED84-11D1-8466-0020AF05ED45} = s 'DoNothing Class'
+		{
+			ProgID = s 'EmptyService.DoNothing.1'
+			VersionIndependentProgID = s 'EmptyService.DoNothing'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{E6262F24-ED81-11D1-8465-0020AF05ED45}'
+		}
+	}
+}

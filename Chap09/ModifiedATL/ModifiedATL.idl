@@ -1,0 +1,20 @@
+// ModifiedATL.idl : IDL source for ModifiedATL.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ModifiedATL.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(D285D153-ED84-11D1-8466-0020AF05ED45),
+	version(1.0),
+	helpstring("ModifiedATL 1.0 Type Library")
+]
+library MODIFIEDATLLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+};

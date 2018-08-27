@@ -1,0 +1,22 @@
+HKCR
+{
+	BusObject.PoolAdminData.1 = s 'PoolAdminData Class'
+	{
+		CLSID = s '{D2EA07E4-F887-11D1-846A-0020AF05ED45}'
+	}
+	BusObject.PoolAdminData = s 'PoolAdminData Class'
+	{
+		CurVer = s 'BusObject.PoolAdminData.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D2EA07E4-F887-11D1-846A-0020AF05ED45} = s 'PoolAdminData Class'
+		{
+			ProgID = s 'BusObject.PoolAdminData.1'
+			VersionIndependentProgID = s 'BusObject.PoolAdminData'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{D285D163-ED84-11D1-8466-0020AF05ED45}'
+		}
+	}
+}

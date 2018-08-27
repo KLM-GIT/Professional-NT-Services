@@ -1,0 +1,80 @@
+// PoolerMMC.idl : IDL source for PoolerMMC.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (PoolerMMC.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "mmc.idl"; //Add This
+
+	[
+		object,
+		uuid(A2AF0D58-F7E6-11d1-846A-0020AF05ED45),
+		dual,
+		helpstring("IPoolerMMCDataObject Interface"),
+		pointer_default(unique)
+	]
+	interface IPoolerMMCDataObject : IUnknown
+	{
+		[propget, id(1), helpstring("property Cookie")] HRESULT Cookie([out, retval] long *pVal);
+		[propput, id(1), helpstring("property Cookie")] HRESULT Cookie([in] long newval);
+	};
+
+	[
+		object,
+		uuid(A2AF0D59-F7E6-11d1-846A-0020AF05ED45),
+		dual,
+		helpstring("IPoolerMMCExtendContextMenu Interface"),
+		pointer_default(unique)
+	]
+	interface IPoolerMMCExtendContextMenu : IUnknown
+	{
+		[propput, id(1), helpstring("property Console")] HRESULT Console([in] LPUNKNOWN  pi);
+	};
+
+[
+	uuid(C8FF6D09-F7C9-11D1-846A-0020AF05ED45),
+	version(1.0),
+	helpstring("PoolerMMC 1.0 Type Library")
+]
+library POOLERMMCLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(C8FF6D19-F7C9-11D1-846A-0020AF05ED45),
+		helpstring("Component Class")
+	]
+	coclass Component
+	{
+		[default] interface IComponent;
+	};
+	[
+		uuid(C8FF6D1B-F7C9-11D1-846A-0020AF05ED45),
+		helpstring("ComponentData Class")
+	]
+	coclass ComponentData
+	{
+		[default] interface IComponentData;
+	};
+	[
+		uuid(C8FF6D1D-F7C9-11D1-846A-0020AF05ED45),
+		helpstring("DataObject Class")
+	]
+	coclass DataObject
+	{
+		[default] interface IDataObject;
+		interface IPoolerMMCDataObject;
+	};
+	[
+		uuid(C8FF6D1F-F7C9-11D1-846A-0020AF05ED45),
+		helpstring("ExtendContextMenu Class")
+	]
+	coclass ExtendContextMenu
+	{
+		[default] interface IExtendContextMenu;
+		interface IPoolerMMCExtendContextMenu;
+	};
+};

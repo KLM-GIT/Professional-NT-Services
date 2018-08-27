@@ -1,0 +1,56 @@
+// EmptyService.idl : IDL source for EmptyService.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (EmptyService.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+	[
+		object,
+		uuid(D285D14E-ED84-11D1-8466-0020AF05ED45),
+		dual,
+		helpstring("IDoSomething Interface"),
+		pointer_default(unique)
+	]
+	interface IDoSomething : IDispatch
+	{
+	};
+	[
+		object,
+		uuid(D285D151-ED84-11D1-8466-0020AF05ED45),
+		dual,
+		helpstring("IDoNothing Interface"),
+		pointer_default(unique)
+	]
+	interface IDoNothing : IDispatch
+	{
+	};
+[
+	uuid(E6262F23-ED81-11D1-8465-0020AF05ED45),
+	version(1.0),
+	helpstring("EmptyService 1.0 Type Library")
+]
+library EMPTYSERVICELib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(D285D14F-ED84-11D1-8466-0020AF05ED45),
+		helpstring("DoSomething Class")
+	]
+	coclass DoSomething
+	{
+		[default] interface IDoSomething;
+	};
+	[
+		uuid(D285D152-ED84-11D1-8466-0020AF05ED45),
+		helpstring("DoNothing Class")
+	]
+	coclass DoNothing
+	{
+		[default] interface IDoNothing;
+	};
+};

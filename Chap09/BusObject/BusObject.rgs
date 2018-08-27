@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{D285D163-ED84-11D1-8466-0020AF05ED45} = s 'BusObject'
+		'BusObject.EXE'
+		{
+			val AppID = s {D285D163-ED84-11D1-8466-0020AF05ED45}
+		}
+	}
+}

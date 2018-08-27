@@ -1,0 +1,31 @@
+--------------------Configuration: MonitorMsg - Win32 Debug--------------------
+Begining build with project "F:\Program Files\DevStudio\NTServices\MoreMonitor\MonitorMsg\MonitorMsg.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MTd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/MonitorMsg.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"Debug/Monitor.res" /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/MonitorMsg.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/MonitorMsg.pdb" /debug /machine:I386 /out:"Debug/MonitorMsg.dll" /implib:"Debug/MonitorMsg.lib" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x809 /fo"Debug/Monitor.res" /d "_DEBUG" "F:\Program Files\DevStudio\NTServices\MoreMonitor\MonitorMsg\Monitor.rc"" 
+Creating temp file "D:\TEMP\RSP9B.tmp" with contents </nologo /MTd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/MonitorMsg.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"F:\Program Files\DevStudio\NTServices\MoreMonitor\MonitorMsg\Monitor.c"
+>
+Creating command line "cl.exe @D:\TEMP\RSP9B.tmp" 
+Creating temp file "D:\TEMP\RSP9C.tmp" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/MonitorMsg.pdb" /debug /machine:I386 /out:"Debug/MonitorMsg.dll" /implib:"Debug/MonitorMsg.lib" /pdbtype:sept 
+".\Debug\Monitor.res"
+".\Debug\Monitor.obj">
+Creating command line "link.exe @D:\TEMP\RSP9C.tmp" 
+Compiling resources...
+Compiling...
+Monitor.c
+Linking...
+   Creating library Debug/MonitorMsg.lib and object Debug/MonitorMsg.exp
+
+
+
+MonitorMsg.dll - 0 error(s), 0 warning(s)

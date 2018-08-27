@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{E6262F24-ED81-11D1-8465-0020AF05ED45} = s 'EmptyService'
+		'EmptyService.EXE'
+		{
+			val AppID = s {E6262F24-ED81-11D1-8465-0020AF05ED45}
+		}
+	}
+}

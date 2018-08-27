@@ -1,0 +1,9 @@
+; BusObjCpl.def : Declares the module parameters for the DLL.
+
+LIBRARY      "BusObjCpl"
+DESCRIPTION  'BusObjCpl Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+
+    CPlApplet

@@ -1,0 +1,24 @@
+HKCR
+{
+	PoolerMMC.Component.1 = s 'Component Class'
+	{
+		CLSID = s '{C8FF6D19-F7C9-11D1-846A-0020AF05ED45}'
+	}
+	PoolerMMC.Component = s 'Component Class'
+	{
+		CurVer = s 'PoolerMMC.Component.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {C8FF6D19-F7C9-11D1-846A-0020AF05ED45} = s 'Component Class'
+		{
+			ProgID = s 'PoolerMMC.Component.1'
+			VersionIndependentProgID = s 'PoolerMMC.Component'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+		}
+	}
+}

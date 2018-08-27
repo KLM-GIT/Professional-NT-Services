@@ -1,0 +1,23 @@
+HKCR
+{
+	PoolerMMC.ExtendContextMenu.1 = s 'ExtendContextMenu Class'
+	{
+		CLSID = s '{C8FF6D1F-F7C9-11D1-846A-0020AF05ED45}'
+	}
+	PoolerMMC.ExtendContextMenu = s 'ExtendContextMenu Class'
+	{
+		CurVer = s 'PoolerMMC.ExtendContextMenu.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {C8FF6D1F-F7C9-11D1-846A-0020AF05ED45} = s 'ExtendContextMenu Class'
+		{
+			ProgID = s 'PoolerMMC.ExtendContextMenu.1'
+			VersionIndependentProgID = s 'PoolerMMC.ExtendContextMenu'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+//
+// This file maps message Id values in to a text string that contains
+// the symbolic name used for the message Id.  Useful for debugging
+// output.
+//
+
+struct {
+    DWORD MessageId;
+    char *SymbolicName;
+} logtestSymbolicNames[] = {
+ (DWORD) LOGTEST_GENERIC, "LOGTEST_GENERIC",
+ (DWORD) LOGTEST_WIN32_ERROR, "LOGTEST_WIN32_ERROR",
+ (DWORD) LOGTEST_MULTISTRING_ERROR, "LOGTEST_MULTISTRING_ERROR",
+ (DWORD) LOGTEST_ERROR, "LOGTEST_ERROR",
+ (DWORD) LOGTEST_INFO_1, "LOGTEST_INFO_1",
+ (DWORD) LOGTEST_ERROR_WITH_DATA, "LOGTEST_ERROR_WITH_DATA",
+ (DWORD) 0xFFFFFFFF, NULL
+};

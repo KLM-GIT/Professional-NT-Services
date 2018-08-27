@@ -1,0 +1,13 @@
+//
+// This file maps message Id values in to a text string that contains
+// the symbolic name used for the message Id.  Useful for debugging
+// output.
+//
+
+struct {
+    DWORD MessageId;
+    char *SymbolicName;
+} AgentSymbolicNames[] = {
+ (DWORD) SERVICE_WIN32_ERROR, "SERVICE_WIN32_ERROR",
+ (DWORD) 0xFFFFFFFF, NULL
+};
